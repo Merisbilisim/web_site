@@ -1,0 +1,83 @@
+*{
+    margin: 0;/*dıs boşlukları sıfırla*/
+    padding: 0;/*iç boşlukları sıfırla */
+    box-sizing: border-box;/*kutu genişlik ve yüksekliğini border a kadar belirliyor*/
+} 
+body{
+    background-image: url(../img/fresh-spring-background.jpg);
+    background-size: cover;/*resmin ekranı katlaması için cover kullanılır*/
+    min-height: 100vh;
+    font-family: "Almendra", serif;
+    font-weight: 700;
+    font-style: italic;
+
+}
+#logo{
+    text-align: center;
+    padding: 24px;
+    
+}
+#logo img{
+    width: 150px;
+}
+.container{
+    margin: auto;
+    width: 70%;
+}
+#menu{
+    background-color: white;
+    box-shadow: 0 0 5px gray;/*gölge olusturmak için*/
+
+}
+ul{
+    display: flex;
+    justify-content:space-around;/*flex nesnelerin hizalanması*/
+    list-style-type:none;
+    
+}#menu a{
+    text-decoration: none;/*Linklerin alt çizgisini kaldırır.*/
+    color: #e66c06;
+    padding: 10px;
+    display: inline-block;
+    transition: 1s;/*gecikme suresi ekler.*/
+}
+#menu a:hover{
+   color: green;
+   transition: 1s;/*gecikme suresi ekler.*/
+}
+.banner{
+    text-align: center;
+
+}
+.urunler{
+   display: flex;
+   gap: 24px;
+   
+}
+.urun{
+    flex: 1;/*urunlerin esit ebata sıgmasını sağlar*/
+    box-shadow:0 0 5px gray; 
+
+}
+.urun img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;/*resmi sığmasını sağlar.*/
+
+    
+
+}
+footer{
+    margin: 20px 0px;
+    display: flex;
+    justify-content:space-between;
+    background-color: #ffffff92;
+    padding: 5px;
+    box-shadow:0 0 5px gray; 
+}
+.sag{
+    color: red;
+}
+.sol{
+    color: green;
+}
